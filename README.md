@@ -1,3 +1,3 @@
 # React + Vite
 
-Shadcn Setup: ![Link](https://ui.shadcn.com/docs/installation/vite)
+[Shadcn Setup Guide](https://ui.shadcn.com/docs/installation/vite)
