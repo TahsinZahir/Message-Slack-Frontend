@@ -1,4 +1,5 @@
 import './App.css';
+import { Toaster } from "@/components/ui/sonner"
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Route, Routes } from 'react-router-dom';
 import { SigninCard } from '@/components/organisms/Auth/SigninCard';
@@ -15,6 +16,7 @@ function App() {
         <Route path="/auth/signin" element={<Auth><SigninCard /></Auth>} />
           <Route path="/*" element={<Notfound />} />
       </Routes>
+      <Toaster />
     </QueryClientProvider>
   );
 }
