@@ -5,8 +5,14 @@ import { signUpRequest } from '@/apis/auth';
 export const useSignup = () => {
   const { isPending, isSuccess, error, mutateAsync: signupMutation } = useMutation({
         mutationFn: signUpRequest,
-        onSuccess: (data) => {
-            console.log('Successfully signed up', data);
+ onSuccess: (response) => {
+            console.log('Successfully signed in', response);
+
+            const userObject = JSON.stringify(response.data);
+
+            localStorage.setItem('user', userObject);
+            localStorage.setItem('token', response.data.token);
+            
            toast.success('Successfully signed up. You will be redirected soon.');
         },
         onError: (error) => {
