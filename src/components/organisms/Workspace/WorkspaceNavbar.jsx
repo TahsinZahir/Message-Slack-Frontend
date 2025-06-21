@@ -22,7 +22,8 @@ export const WorkspaceNavbar = () => {
             <div>
                 <Button
                     size='sm'
-                    className='bg-accent/25 hover:bg-accent/15 w-full justify-start h-7 px-2'
+                    className="bg-[#541554]/80 hover:bg-[#541554]/40 w-full justify-start h-7 px-2"
+
                 >
                     <SearchIcon className='size-5 text-white mr-2' />
                     <span className='text-white text-xs'>

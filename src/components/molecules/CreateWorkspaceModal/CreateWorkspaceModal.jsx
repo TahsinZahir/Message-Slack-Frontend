@@ -51,7 +51,7 @@ async function handleFormSubmit(e) {
                         value={workspaceName}
                         onChange={(e) => setWorkspaceName(e.target.value)}
                     />
-  <div className='flex justify-end mt-5'>
+  <div className='flex justify-end mt-5 '>
                         <Button disabled={isPending}>Create workspace</Button>
                     </div>
                 </form>

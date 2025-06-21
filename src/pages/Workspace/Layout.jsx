@@ -3,11 +3,11 @@ import { WorkspaceNavbar } from '@/components/organisms/Workspace/WorkspaceNavba
 
 export const WorkspaceLayout = ({ children }) => {
     return (
-        <div className="h-[100vh] ">
-            <div className="flex h-full ">
+        <div className="h-[100vh] flex">
+             <WorkspaceSidebar />
+            <div className="flex flex-col flex-1">
                 <WorkspaceNavbar />
-            <div className="flex h-[calc(100vh-40px)]"></div>
-                <WorkspaceSidebar />
+            <div className="flex-1 overflow-y-auto bg-white"></div>
                 {children}
             </div>
         </div>
