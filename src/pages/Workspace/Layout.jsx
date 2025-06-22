@@ -1,6 +1,7 @@
 import { WorkspaceSidebar } from '@/components/organisms/Workspace/WorkspaceSidebar';
 import { WorkspaceNavbar } from '@/components/organisms/Workspace/WorkspaceNavbar';
 import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from '@/components/ui/resizable';
+import { WorkspacePanel } from '@/components/organisms/Workspace/WorkspacePanel';
 export const WorkspaceLayout = ({ children }) => {
     return (
         <div className="h-[100vh] flex">
@@ -15,9 +16,7 @@ export const WorkspaceLayout = ({ children }) => {
                         className="bg-purple-200"
 
                     >
-                        <div>
-                            Sidebar
-                        </div>
+                          <WorkspacePanel />
                     </ResizablePanel>
                     <ResizableHandle withHandle/>
                     <ResizablePanel
