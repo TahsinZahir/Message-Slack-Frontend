@@ -6,7 +6,7 @@ import { SignupContainer } from '@/components/organisms/Auth/SignupContainer';
 import { Auth } from '@/pages/Auth/Auth';
 import { Home } from '@/pages/Home/Home';
 import { Notfound } from '@/pages/Notfound/Notfound';
-
+import { JoinPage } from './pages/Workspace/JoinPage';
 import { WorkspaceLayout } from './pages/Workspace/Layout';
 
 export const AppRoutes = () => {
@@ -21,6 +21,7 @@ export const AppRoutes = () => {
             element={<ProtectedRoute>Channel</ProtectedRoute>}
 
           />
+               <Route path="/workspaces/join/:workspaceId" element={<JoinPage />} />
           <Route path="/*" element={<Notfound />} />
         </Routes>
     );
