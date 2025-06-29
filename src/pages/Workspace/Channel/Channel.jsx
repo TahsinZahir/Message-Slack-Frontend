@@ -42,7 +42,7 @@ export const Channel = () => {
     useEffect(() => {
         if(isSuccess ) {
             console.log('Channel Messages fetched');
-            setMessageList(messages);
+            setMessageList(messages.reverse());
         }
     }, [isSuccess, messages, setMessageList, channelId]);
 
@@ -75,8 +75,8 @@ export const Channel = () => {
                 ref={messageContainerListRef}
                 className='flex-5 overflow-y-auto p-5 gap-y-2'
             >
-                {messageList?.map((message) => {
-                    return <Message key={message._id} body={message.body} authorImage={message.senderId?.avatar} authorName={message.senderId?.username} createdAt={message.createdAt}   />;
+                    {messageList?.map((message) => {
+                    return <Message key={message._id} body={message.body} authorImage={message.senderId?.avatar} authorName={message.senderId?.username} createdAt={message.createdAt} image={message.image}   />;
                 })}   
             </div>   
 
