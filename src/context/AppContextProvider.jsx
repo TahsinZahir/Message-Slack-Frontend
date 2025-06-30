@@ -1,7 +1,7 @@
 import combineContext from '@/utils/combineContext';
 
 import { AuthContextProvider } from './AuthContext';
-import { ChannelMessagesProvider } from './CHannelMessages';
+import { ChannelMessagesProvider } from './ChannelMessages';
 import { CreateChannelContextProvider } from './CreateChannelContext';
 import { CreateWorkspaceContextProvider } from './CreateWorkspaceContext';
 import { SocketContextProvider } from './SocketContext';
